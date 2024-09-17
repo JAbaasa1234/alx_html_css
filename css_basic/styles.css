@@ -1,0 +1,40 @@
+/* styles.css */
+
+/* Apply Flexbox to the body container */
+body {
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Flexbox to the main container */
+main {
+    display: flex;
+    flex-direction: row; /* Stack article and aside side by side */
+    flex: auto; /* Automatic height and width */
+    margin: 10px 0; /* Add some margin around the main */
+}
+
+/* Article takes 2/3 of the width */
+article {
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling */
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling */
+}
+
+/* Style header and footer */
+header, footer {
+    padding: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #ddd;
+}
