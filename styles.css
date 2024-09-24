@@ -1,0 +1,410 @@
+/* Background Image for Header and Banner */
+.Banner{
+    background-image: url(Object.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0;
+    color: white;
+    min-height: 120vh; /* Adjusted height to fit all content */
+}
+
+/* Navigation Header */
+.Navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.Links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.Links{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.Links li{
+    margin-right: 20px;
+}
+
+/* Logo */
+.logo{
+    width: 167.02px;
+}
+
+/* School Heading*/
+.School {
+    text-align: center;
+    padding-top: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.School h1{
+    font-size: 120px;
+    margin-bottom: 0;
+}
+
+.three-words span{
+    font-size: 16px;
+    color: white;
+    margin-right: 60px;
+}
+
+.button{
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+button{
+    background-color: #C271FF;
+    border: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Learn From The pros Section*/
+.LearnFromPros{
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.LearnFromPros h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.purple{
+    color: #C271FF;
+}
+
+.pros-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.pro img{
+    width: 150px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.pro h3{
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.pro p{
+    font-size: 16px;
+    color: white;
+}
+
+/*Quotes Section*/
+.quotes{
+    background-color: #C271FF;
+    display: flex;
+    align-items: flex-start;
+}
+
+.Happy img{
+    width: 160px;
+    height: 160px;
+}
+
+.Happy {
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quote-text{
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+}
+
+.name{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.job-title{
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+blockquote {
+    line-height: 1.5;
+}
+
+.popular{
+    color: #C271FF;
+}
+
+.Most{
+    text-align: center;
+}
+
+.Videos{
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.Videos h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.video-container{
+    display: flex;
+    gap: 20px;
+}
+
+.video{
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video h3 {
+    margin: 10px 0;
+}
+
+.video p {
+    margin: 5px 0;
+}
+
+.video-img-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.video-img-container img:first-child {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;   
+    z-index: 1;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.creator img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.rating-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.rating-image{
+    width: 107px;
+}
+
+.rating-section p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.Phillip{
+    color: #C271FF;
+}
+
+.time{
+    color: #C271FF;
+}
+
+.membership-section{
+    background-color: #071629;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.membership-section h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.membership-section .highlight{
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.features-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature{
+    text-align: center;
+}
+
+.feature img{
+    width: 43.67px;
+    margin-bottom: 20px;
+}
+
+.feature h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.register-btn{
+    background-color: #C271FF;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-section{
+    background-color: white;
+    color: #07162980;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: #071629;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.faq-column {
+    flex: 1;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #071629;
+}
+
+.faq-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #666;
+}
+
+footer {
+    background-color: #071629; /* Dark background */
+    padding: 40px;
+    color: white; /* White text */
+    position: relative; /* Allows positioning of copyright */
+}
+
+.footer-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    max-width: 169px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons a {
+    text-decoration: none;
+}
+
+.footer-icons i {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-icons i:hover {
+    color: #a8a8a8;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #a8a8a8;
+}
