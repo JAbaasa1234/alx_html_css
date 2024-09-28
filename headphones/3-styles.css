@@ -1,0 +1,380 @@
+/* Apply background image to the header or hero-section */
+header {
+    background-image: url('headphones_hero_1.jpg'); /* Using the correct image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Keeps the focus in the center of the image */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    height: 800px; /* Full viewport height */
+    color: white; /* Ensure the text contrasts well against the background */
+    position: relative; /* So we can add an overlay effect */
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+/* Wrapper for the content */
+.wrapper {
+    max-width: 1000px; /* Maximum width of the content */
+    margin: 0 auto; /* Centers the content */
+    padding: 0 10px; /* Padding for mobile responsiveness */
+}
+
+.header {
+    padding: 20px;
+}
+
+.logo{
+    width: 161px;
+    height: 32px;
+}
+
+.Navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 320px;
+}
+
+.Links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.Links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header-link:hover,
+.header-link:active {
+    color: #FF6565; /* Link hover/active color */
+}
+
+.hero-section{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.hero-section h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-section h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.hero-section p{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.cta-button {
+    background-color: #FF6565; /* Example button color from the screenshot */
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+
+.cta-button:hover,
+.cta-button:active {
+    opacity: 0.9; /* Button hover/active effect */
+}
+
+.menu-icon {
+    display: none; /* Hide the menu icon on larger screens */
+  }
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    /* Hide the nav links */
+    .Links {
+        display: none;
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+        position: absolute;
+        top: 60px; /* Adjust according to your nav bar height */
+        right: 20px;
+        background-color: #071629; /* Dark background */
+        padding: 20px;
+        width: 100%; /* Full width on mobile */
+        text-align: center;
+    }
+
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        left: 15px;
+    }
+}
+
+.what-we-do{
+    padding: 50px 200px;
+    text-align: center;
+    background-color: #f8f8f8;
+    height: 460px;
+}
+
+.what-we-do h1 {
+    margin-bottom: 30px;
+  }
+
+.what-we-do p{
+    margin-bottom: 90px;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust padding and text alignment for smaller screens */
+    .what-we-do {
+        padding: 20px 20px; /* Reduce padding for mobile */
+        text-align: center; /* Keep text centered */
+        height: auto; /* Let the section expand based on content */
+    }
+
+    /* Adjust the heading size for better readability */
+    .what-we-do h1 {
+        font-size: 24px; /* Smaller heading on mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the paragraph text size */
+    .what-we-do p {
+        font-size: 14px; /* Smaller font size */
+        margin-bottom: 40px; /* Reduce bottom margin */
+    }
+
+    /* Stack the service items vertically on mobile */
+    .services {
+        grid-template-columns: 1fr; /* One column layout on mobile */
+        gap: 20px; /* Reduce the gap between items */
+    }
+
+    /* Make sure the service images fit within the container */
+    .service-item img {
+        width: 100px; /* Resize the images */
+        margin-bottom: 10px; /* Space below the image */
+    }
+
+    /* Adjust service item heading and paragraph */
+    .service-item h3 {
+        font-size: 16px; /* Smaller heading size */
+    }
+
+    .service-item p {
+        font-size: 12px; /* Smaller paragraph size */
+    }
+}
+
+.our-results-section{
+    background-image: url(headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.our-results-section h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.our-results-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 637px;
+    margin: 0 auto 40px auto;
+  }
+
+.four-pentagons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pentagon-container {
+    position: relative;
+    width: 150px;
+    text-align: center;
+  }
+
+.pentagon-container img {
+    width: 180.7px;
+    height: 171.86px;
+  }
+
+.pentagon-text{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.pentagon-text .percentage {
+    font-size: 46px;
+    font-weight: bold;
+    color: white;
+}
+
+.pentagon-text .description {
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    margin-top: 5px;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust padding for mobile */
+    .our-results-section {
+        padding: 40px 10px; /* Less padding on mobile */
+    }
+
+    /* Adjust heading font size for mobile */
+    .our-results-section h1 {
+        font-size: 24px; /* Reduce heading size */
+        margin-bottom: 20px;
+    }
+
+    /* Adjust paragraph font size for mobile */
+    .our-results-section p {
+        font-size: 14px; /* Smaller paragraph text */
+        margin-bottom: 20px; /* Less margin */
+    }
+
+    /* Stack pentagons vertically on mobile */
+    .four-pentagons {
+        display: flex;
+        flex-direction: column; /* Stack in one column */
+        align-items: center; /* Center-align each pentagon */
+    }
+
+    /* Adjust pentagon container for mobile */
+    .pentagon-container {
+        width: 120px; /* Reduce the container width */
+        margin-bottom: 20px; /* Space between pentagons */
+    }
+
+    /* Resize the pentagon images */
+    .pentagon-container img {
+        width: 120px; /* Smaller pentagon size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the position of the pentagon text */
+    .pentagon-text {
+        top: 50%; /* Adjust for smaller pentagons */
+        left: 50%;
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    /* Resize the percentage text */
+    .pentagon-text .percentage {
+        font-size: 24px; /* Reduce size for smaller screens */
+    }
+
+    /* Resize the description text */
+    .pentagon-text .description {
+        font-size: 12px; /* Smaller description text */
+    }
+}
+
+.Contact-section {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px; /* Center and limit the width */
+}
+
+.Contact-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc; /* Just a line as the border */
+    background-color: transparent; /* Transparent background */
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    text-align: center;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 2px solid #9d9d9d; /* Darker line on focus */
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -20px;
+    font-size: 12px;
+    color: #333;
+}
+
+textarea {
+    resize: none;
+    width: auto;
+  }
